@@ -78,7 +78,7 @@ Case 2: Commited Changes: (For one commit)
 <br>
 git reset HEAD~1
 <br>
-Case 2: Commited Changes: (For many commits)
+Case 3: Commited Changes: (For many commits)
 <br>
 git log ------> Get the hash/code of the change we want to go back to and replace that with hash below
 <br>
