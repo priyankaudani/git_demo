@@ -64,18 +64,25 @@ git diff <--branch name ->   -----------> To compare commits, branches, files & 
 git merge <--branch name ->   -----------> To merge 2 branches
 <br>
 # PULL
-<br>
 git pull origin main
 <br>
 # UNDOING CHANGES
 <p>
 Case 1: Staged changes: (Only added)
+<br>
 git reset <-file name->
+<br>
 git reset -----------> All files reset at once
+<br>
 Case 2: Commited Changes: (For one commit)
+<br>
 git reset HEAD~1
+<br>
 Case 2: Commited Changes: (For many commits)
+<br>
 git log ------> Get the hash/code of the change we want to go back to and replace that with hash below
+<br>
 git reset <-commit hash->
+<br>
 git reset --hard <-commit hash->
 </p>
