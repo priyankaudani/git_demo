@@ -33,5 +33,49 @@ cd .. --------> Used to go back a folder
 <br>
 mkdir   -----------> To make new directory
 <br>
-git init    ------> to make it git repository
+git init    ------> To make it git repository
+<br>
+git remote add origin <link>
+<br>
+git remote -v    -----> To verify remote directory
+<br>
+git branch 
+<br>
+git branch
 
+
+<br>
+git push -u origin main  ----------> Can use git push next time directly.
+<br>
+git branch  -----> To check branch
+<br>
+git branch -M (new_name)  -----> To rename the branch
+<br>
+git checkout <-branch name -> -------> To navigate
+<br>
+git checkout -b <-new_branch_name->  ----> To create a new branch
+<br>
+git branch -d <-branch_name> -----> To delete branch
+
+# Merge Code ( Two ways: Using Pull Request or use Terminal)
+
+git diff <--branch name ->   -----------> To compare commits, branches, files & more
+<br>
+git merge <--branch name ->   -----------> To merge 2 branches
+<br>
+# PULL
+<br>
+git pull origin main
+<br>
+# UNDOING CHANGES
+<p>
+Case 1: Staged changes: (Only added)
+git reset <-file name->
+git reset -----------> All files reset at once
+Case 2: Commited Changes: (For one commit)
+git reset HEAD~1
+Case 2: Commited Changes: (For many commits)
+git log ------> Get the hash/code of the change we want to go back to and replace that with hash below
+git reset <-commit hash->
+git reset --hard <-commit hash->
+</p>
