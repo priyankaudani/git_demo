@@ -4,15 +4,27 @@ This is a description
 Few GIT commands: 
 
 git --version
+<br>
 git config --global user.name "My name"
+<br>
 git config --global user.email "Email"
+<br>
 git config --list
+<br>
 git clone "(link)"
+<br>
 pwd
+<br>
 ls
+<br>
 git cd
+<br>
 git status
+<br>
 git add *file name*
+<br>
 git add .
+<br>
 git commit -m "Message"
+<br>
 git push origin main
