@@ -7,6 +7,6 @@ pwd
 ls
 git cd
 git status
-git add
+git add *file name*
 git commit -m "Message"
 git push origin main
