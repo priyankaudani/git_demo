@@ -28,3 +28,10 @@ git add .
 git commit -m "Message"
 <br>
 git push origin main
+<br>
+cd .. --------> Used to go back a folder
+<br>
+mkdir   -----------> To make new directory
+<br>
+git init    ------> to make it git repository
+
