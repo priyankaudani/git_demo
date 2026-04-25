@@ -9,6 +9,8 @@ git config --global user.name "My name"
 <br>
 git config --global user.email "Email"
 <br>
+git config --global core.editor "code --wait"
+<br>
 git config --list
 <br>
 git clone "(link)"
@@ -41,7 +43,7 @@ git remote -v    -----> To verify remote directory
 <br>
 git branch 
 <br>
-git branch
+touch .gitignore
 
 
 <br>
@@ -81,6 +83,8 @@ git reset HEAD~1
 Case 3: Commited Changes: (For many commits)
 <br>
 git log ------> Get the hash/code of the change we want to go back to and replace that with hash below
+<br>
+git log --oneline     ----> Gives results in one line
 <br>
 git reset <-commit hash->
 <br>
