@@ -12,13 +12,13 @@ git status
 cd .. --------> Used to go back a folder
 mkdir   -----------> To make new directory
 git init    ------> To make it git repository
+touch .gitignore
 
 # CONFIG
 git config --global user.name "My name"
 git config --global user.email "Email"
 git config --global core.editor "code --wait"
 git config --list
-git clone "(link)"
 
 # LOG, ADD, COMMIT, PUSH
 git log --oneline     ----> Gives results in one line
@@ -28,10 +28,20 @@ git commit -m "Message"
 git push origin main
 git push -u origin main  ----------> Can use git push next time directly
 
-#REMOTE
+# REMOTE ------ To connect to an online GITHUB repo
 git remote add origin <link>
 git remote -v    -----> To verify remote directory
-touch .gitignore
+
+# CLONE -------- To directly start working on an existing GITHUB Repo
+git clone link
+
+# FETCH ---------> Gets info from online repo but doesn't make changes.
+git fetch
+
+# PULL ----------> Gets the info and adds to my work. git pull = git fetch + git merge
+git pull origin main ----> Changes will be merged to main
+
+
 
 # BRANCH
 git branch    -----> To check branch
@@ -43,10 +53,19 @@ git switch -c new_branch_name    ----> To create a new branch and move there
 git branch -d branch_name   -----> To delete branch
 
 # Merge Code ( Two ways: Using Pull Request or use Terminal)
-
 git checkout master  -------- Make sure you go to the master branch first
-git diff branch_name    -----------> To compare commits, branches, files & more
 git merge branch_name    -----------> To merge 2 branches into master branch
+
+# DIFF
+git diff branch_name    -----------> To compare commits, branches, files & more
+git diff --staged ----------> Shows the changes to files in the staging area.
+git diff log_code log_code_newer ----> Shows changes between a file in these two logs
+git diff log_code..log_code_newer ----> Shows changes between a file in these two logs
+git diff branchone..branchtwo
+
+# GIT STASH ---- used to switch branches before commiting or adding changes to the current branch.
+git stash ------- to stash or temporarily save the changes
+git stash pop -------- to get them back after you go back to the branch you were working on
 
 # PULL
 git pull origin main
@@ -64,3 +83,9 @@ git log ------> Get the hash/code of the change we want to go back to and replac
 git reset <-commit hash->
 git reset --hard <-commit hash->
 
+# RESTORE
+git restore filename ---> To restore a previous version of file.
+git reflog -----> To go back to previous state
+
+# REBASE  ------- never use from main/master branch. It
+git rebase master  -----------> means i am merging my current branch with master
