@@ -41,8 +41,6 @@ git fetch
 # PULL ----------> Gets the info and adds to my work. git pull = git fetch + git merge
 git pull origin main ----> Changes will be merged to main
 
-
-
 # BRANCH
 git branch    -----> To check branch
 git branch -M (new_name)    -----> To rename the branch
