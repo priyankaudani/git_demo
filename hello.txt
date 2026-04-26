@@ -39,12 +39,14 @@ git branch -M (new_name)    -----> To rename the branch
 git switch new_branch_name
 git checkout branch_name    -------> To navigate to another branch
 git checkout -b new_branch_name    ----> To create a new branch
+git switch -c new_branch_name    ----> To create a new branch and move there
 git branch -d branch_name   -----> To delete branch
 
 # Merge Code ( Two ways: Using Pull Request or use Terminal)
 
+git checkout master  -------- Make sure you go to the master branch first
 git diff branch_name    -----------> To compare commits, branches, files & more
-git merge branch_name    -----------> To merge 2 branches
+git merge branch_name    -----------> To merge 2 branches into master branch
 
 # PULL
 git pull origin main
