@@ -3,76 +3,62 @@ This is a description
 
 Few GIT commands:
 
+# GENERAL
 git --version
-
-git config --global user.name "My name"
-
-git config --global user.email "Email"
-
-git config --global core.editor "code --wait"
-
-git config --list
-
-git clone "(link)"
 pwd
 ls
 git cd
 git status
-git log --oneline     ----> Gives results in one line
-git add *file name*
-
-git add .
-
-git commit -m "Message"
-
-git push origin main
-
 cd .. --------> Used to go back a folder
-
 mkdir   -----------> To make new directory
-
 git init    ------> To make it git repository
 
+# CONFIG
+git config --global user.name "My name"
+git config --global user.email "Email"
+git config --global core.editor "code --wait"
+git config --list
+git clone "(link)"
+
+# LOG, ADD, COMMIT, PUSH
+git log --oneline     ----> Gives results in one line
+git add *file name*
+git add .
+git commit -m "Message"
+git push origin main
+git push -u origin main  ----------> Can use git push next time directly
+
+#REMOTE
 git remote add origin <link>
-
 git remote -v    -----> To verify remote directory
-
-git branch
-
 touch .gitignore
 
-git push -u origin main  ----------> Can use git push next time directly.
-
-git branch  -----> To check branch
-
-git branch -M (new_name)  -----> To rename the branch
-
-git checkout <-branch name -> -------> To navigate
-
-git checkout -b <-new_branch_name->  ----> To create a new branch
-
-git branch -d <-branch_name> -----> To delete branch
+# BRANCH
+git branch    -----> To check branch
+git branch -M (new_name)    -----> To rename the branch
+git switch new_branch_name
+git checkout branch_name    -------> To navigate to another branch
+git checkout -b new_branch_name    ----> To create a new branch
+git branch -d branch_name   -----> To delete branch
 
 # Merge Code ( Two ways: Using Pull Request or use Terminal)
 
-git diff <--branch name ->   -----------> To compare commits, branches, files & more
-
-git merge <--branch name ->   -----------> To merge 2 branches
+git diff branch_name    -----------> To compare commits, branches, files & more
+git merge branch_name    -----------> To merge 2 branches
 
 # PULL
 git pull origin main
 
 # UNDOING CHANGES
-
 Case 1: Staged changes: (Only added)
 git reset <-file name->
 git reset -----------> All files reset at once
-
 Case 2: Commited Changes: (For one commit)
 git reset HEAD~1
-
 Case 3: Commited Changes: (For many commits)
 git log ------> Get the hash/code of the change we want to go back to and replace that with hash below
 
+# RESET
 git reset <-commit hash->
 git reset --hard <-commit hash->
+
